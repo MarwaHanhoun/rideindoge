@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "581e9f99-52dd-4efa-8303-c8f673a2bec3",
+		"name": "indego",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21545863"
+	},
+	"item": [
+		{
+			"name": "Manaula cron job",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/v1/indego-data-fetch-and-store-it-db",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"indego-data-fetch-and-store-it-db"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bydate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/v1/stations?at=2023-08-16T00:16:42.889&page=1&limit=10",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"stations"
+					],
+					"query": [
+						{
+							"key": "at",
+							"value": "2023-08-16T00:16:42.889"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "By Kiosk and date",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/v1/stations/3005?at=2023-08-16T00:16:42.889&page=1&limit=10",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"stations",
+						"3005"
+					],
+					"query": [
+						{
+							"key": "at",
+							"value": "2023-08-16T00:16:42.889"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
