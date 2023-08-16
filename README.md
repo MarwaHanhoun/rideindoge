@@ -49,6 +49,7 @@ $ npx prisma migrate dev --name init
 $ npm run start
 # or
 $ docker build -t rideindego .
+
 $ sudo docker run -p 3000:3000 rideindego
 
 ## Test
